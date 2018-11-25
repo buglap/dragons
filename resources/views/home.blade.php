@@ -1,11 +1,12 @@
 @extends('layouts.app')
-
+@section('title','Dragons')
+@section('nav','Dragoncitos')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Welcome {{$user->name}}</div>
+                <div class="card-header">Welcome {{$user->name}}, this are the active tournaments:</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +15,7 @@
                         </div>
                     @endif
 
-                    I'm just learning to use git!
+                    
                 </div>
             </div>
         </div>

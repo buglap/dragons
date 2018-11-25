@@ -27,4 +27,14 @@ class HomeController extends Controller
         $user = Auth::user();
         return view('home', compact('user'));
     }
+    public function contact()
+    {
+        $user = Auth::user();
+        return view('contact', compact('user'));
+    }
+    public function about()
+    {
+        $user = Auth::user();
+        return view('about', compact('user'));
+    }
 }

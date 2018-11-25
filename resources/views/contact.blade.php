@@ -72,6 +72,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
+                        <a href="{{ route('contact') }}">Contact</a>
                         <a href="{{ route('login') }}">Login</a>
 
 
@@ -84,7 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Dragons
+                   Contact
                 </div>
 
                 <div class="links">
