@@ -1,2 +1,2 @@
-#**Dragons**
->Just a project for learn how to use Laravel and some other things.
+#Dragons
+>Contact system tickets made it with Laravel in base of Jesus Conde's Laravel Course 5.
