@@ -20,6 +20,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('/contact', 'TicketsController@create')->name('create');
 Route::get('/about', 'HomeController@about')->name('about');
+Route::post('/contact','TicketsController@store');
+Route::get('/tickets', 'TicketsController@index');
+Route::get('/ticket/{slug?}', 'TicketsController@show');
+Route::get('/ticket/{slug?}/edit','TicketsController@edit');
+Route::post('/ticket/{slug?}/edit','TicketsController@update');
+
+
 

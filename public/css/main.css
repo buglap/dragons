@@ -1,0 +1,296 @@
+nav, header, footer{
+	display: block;
+	margin: 0%;
+}
+body{
+	line-height: 1; /*interline of one px
+	margin: 0; /*all to the edges*/
+	font-family: 'Lato', sans-serif;
+}
+label{
+  font-size: 30px;
+  font-weight: 600;
+}
+p{
+  font-size:20px;
+  line-height: 1.2; 
+}
+article p{
+  font-size: 20px;
+  padding: 0px 0px 20px 20px;
+  text-align: justify;
+  padding: 0% 5% 0% 5%;
+
+}
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.row{
+	width: 100%;
+	display: flex;/*mach the elements in the conteiner*/
+	flex-wrap: wrap;
+	align-items: center;
+}
+.row::after{
+	display: table;
+	clear: both;
+	content: "";
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{/*its for aply in all the page*/
+  box-sizing: border-box;
+
+}
+
+/*#### Nav bar####*/
+nav{
+	width: 100%;
+	margin: 0;
+}
+nav ul{
+	background: #4c6fcc;
+	overflow: hidden; /*for dont scroll over in a mobile version*/
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+ul.topnav li{
+	list-style: none; /*removes the points of the conmon list*/
+	float: left;
+
+}
+ul.topnav li.topnav-right{
+	float: right;
+}
+
+ul.topnav li a{
+	display: block;
+	text-decoration: none; /*take a way the under line*/
+	min-height: 18px; /*minimun hight of the text*/
+	text-align: center;
+	padding: 14px;
+	text-transform: initial; 
+	color: #fff;
+
+}
+
+ul.topnav li a:hover{ /*The hover take action before passing the pointer on*/
+	background-color: #2a4388;
+	color: #fff
+}
+
+ul.topnav li.dropdownIcon{
+	display: none; /*do not sow the drop icon in the web style*/
+}
+
+/*#####custom style###*/
+#section-1-gradient{
+	 background: #fff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #a5aba9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #a5aba9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #a5aba9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #a5aba9); /* Standard syntax */
+}
+
+div.box{
+  text-align: center;
+  margin: 24px;
+  padding: 36px 24px 40px  24px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0.1);
+}
+div.icon{
+  width: 100%;
+}
+button{
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #002690;
+  padding: 15px 60px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+button.learnMore{
+  display: block;
+  margin:auto;
+}
+div.slopeIcon img{
+  display: block;
+  margin: auto;
+  width: 90%;
+  box-shadow: -2px  /*H*/-2px/*V*/ 5px /*B*/ 2px/*S*/ rgba(0,0,0,.15),
+  2px 2px 4px 2px rgba(0,0,0,1);
+}
+div.leftSide-col{
+	margin-left: 30%;
+}
+div.rightSide-col{
+	margin-right: : 15%;
+}
+h1.larger{
+	color: #1e1d5d;
+	font-family: 'Lobster', cursive;
+	font-size: 54px;
+	margin: 0px;
+}
+h1.section2Header {
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+  color:#d53682;
+}
+
+
+form h2 {
+  color: #ce1d5d;
+}
+
+
+input[type="text"]{
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 7px;
+  margin-right:50%;
+
+}
+input[type="Password"]{
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 7px;
+}
+footer.footsy{
+  background-color: #eee;
+  padding-left: 10%;
+}
+footer.footsy h1{
+  color: #fff;
+  font-size: 35px;
+
+}
+footer.footsy ul{
+  list-style: none;
+  text-align: left;
+  padding-left: 5px;
+}
+footer.footsy ul li{
+  color:#fff;
+  line-height: 1.2;
+  font-size: 22px
+
+}
+
+/*####Mobile##*/
+@media screen and (max-width: 680px){
+	ul.topnav li:not(:nth-child(1)){
+		display: none; /*for not display all the menu in the mobile version*/
+		/*not(:nth-child(1)) not selector for the first ul child, in this case home*/
+	}
+	
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+  
+  ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  ul.topnav.responsive {
+    position: relative;
+  }
+  
+  ul.topnav.responsive li {
+    display: inline;
+    float: none; 
+  }
+  
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  
+  h1.section2Header {
+  font-size: 50px;
+}
+  article p {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+  
+  .col-7,
+  .col-6,
+  .col-5,
+  .col-4 {
+    width: 100%;
+    margin: 0;
+  }
+  
+  div.mobileStack {
+    width: 50%;
+    display: block;
+  }
+  
+  div.box {
+    padding: 5px;
+    display: block;
+  }
+  
+  div.slopeIcon {
+    margin: 10px;
+  }
+  
+  div.slopeIcon img {
+    width: 100%;
+  }
+  
+  div.leftSide-col,
+  div.rightSide-col {
+    margin: 15px;
+  }
+  
+  input[type="text"] {
+    width: 350px;
+  }
+
+  input[type="Password"] {
+    width: 350px;
+  }
+  
+  .videoContainer iframe {/*iframe for specifie who is gonna take that 100%*/
+    position: relative; /*for do not move the content*/
+    width: 100%; /*take all the space of the actual column*/
+    margin: 0;
+    overflow: hidden;
+  }
+}
